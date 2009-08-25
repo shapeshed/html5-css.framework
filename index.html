@@ -1,0 +1,305 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	<!-- Meta --> 
+	<meta name="description" content="Put your description in here" /> 
+	<meta name="keywords" content="put, your, keywords, in, here" /> 
+	<!-- CSS --> 
+	<link rel="stylesheet" href="css/screen.css" media="screen" />  
+	<!-- JavaScript -->
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+</head>
+<body>
+	<ul id="skip-links">
+		<li><a href="#internal-column">Skip to main content</a></li>
+		<li><a href="#nav">Skip to navigation</a></li>
+	</ul>
+	<section id="wrapper">
+		<h1>New HTML5 Elements</h1>
+		
+		<h3>Article</h3>
+		<article>
+			<p><a href="#">Man bites dog</a><br />
+			A man has bitten a dog on his way to the shops...</p>
+		</article>
+		
+		<h3>Aside (within article)</h3>
+		<article>
+			<p><a href="#">Man bites dog</a><br />
+			A man has bitten a dog on his way to the shops...</p>
+			<aside>
+			Dogs often bite men but it is rare for men to bite dogs
+			</aside>
+		</article>
+		
+		<h3>Audio</h3>
+		<audio controls autobuffer>
+			<source src="audio/Tromboon-sample.ogg" />
+			<source src="audio/arnie.wav" />
+		</audio>
+		
+		<h3>Canvas</h3>
+		<canvas id="myCanvas">
+			
+		</canvas>
+		
+		<h3>Command</h3>	
+		<command type="checkbox" />
+		
+		<h3>Datagrid</h3>
+		<datagrid>
+			
+		</datagrid>
+		
+		<h3>Datalist</h3>
+		<input id="myCar" list="cars" />
+		<datalist id="cars">
+		<option value="BMW" />
+		<option value="Ford" />
+		<option value="Volvo" />
+		</datalist>
+		
+		<h3>Data Template</h3>
+		<datatemplate>
+			
+		</datatemplate>
+		
+		<h3>Details</h3>
+		<details>
+			<label>Closed details - preset label</label>
+			<p>There's some more text here and it's good!</p>
+		</details>
+
+		<details open="open">
+			<label>Should be open</label>
+			<p>and you should be able to see this para!</p>
+		</details>
+
+		<details>
+			<p>This doesn't have a label</p>
+		</details>  
+
+		<details>
+			<form>
+				<label for="username">Username <input id="username" /></label>
+			</form>
+			<p>With a form</p>
+		</details>
+		
+		<h3>Dialog</h3>
+		<dialog>
+			<dt>Costello</dt>
+			<dd>Look, you gotta first baseman?</dd>
+			<dt>Abbott</dt>
+			<dd>Certainly.</dd>
+			<dt>Costello</dt>
+			<dd>Who's playing first?</dd>
+			<dt>Abbott</dt>
+			<dd>That's right.</dd>
+			<dt>Costello</dt>
+			<dd>When you pay off the first baseman every month, who gets the money?</dd>
+			<dt>Abbott</dt>
+			<dd>Every dollar of it.</dd>
+		</dialog>
+			
+		<h3>Embed</h3>
+		<embed>
+			
+		</embed>
+		
+		<h3>Eventsource</h3>
+		<eventsource>
+			
+		</eventsource>
+		
+		<h3>Figure</h3>
+		<p>In <a href="#l4">listing 4</a> we see the primary core interface
+		API declaration.</p>
+		<figure id="l4">
+		 <legend>Listing 4. The primary core interface API declaration.</legend>
+		 <pre><code>interface PrimaryCore {
+		  boolean verifyDataLine();
+		  void sendData(in sequence&lt;byte> data);
+		  void initSelfDestruct();
+		}</code></pre>
+		</figure>
+		<p>The API is designed to use UTF-8.</p>
+		
+		<h3>Footer</h3>
+		<footer>
+			<p>Footer content</p>
+		</footer>
+		
+		<h3>Header</h3>
+		<header>
+			<hgroup>
+			 <h1>Dr. Strangelove</h1>
+			 <h2>Or: How I Learned to Stop Worrying and Love the Bomb</h2>
+			</hgroup>
+		</header>
+		
+		<h3>Mark</h3>
+		<p>I also have some <mark>kitten</mark>s who are visiting me
+		these days. They're really cute. I think they like my garden! Maybe I
+		should adopt a <mark>kitten</mark>.</p>
+		
+		<h3>Meter</h3>
+		<dl>
+		 <dt>Radius: <dd> <meter min="0" max="20" value="12" title="centimeters">12cm</meter>
+		 <dt>Height: <dd> <meter min="0" max="10" value="2" title="centimeters">2cm</meter>
+		</dl>
+
+		<h3>Nav</h3>
+		<nav>
+		 <ul>
+		    <li><a href="#">Index of all articles</a></li>
+		    <li><a href="#">Things sheeple need to wake up for today</a></li>
+		    <li><a href="#">Sheeple we have managed to wake</a></li>
+		   </ul>			
+		</nav>
+		
+		<h3>Nest</h3>
+		<nest>
+		</nest>
+		
+		<h3>Output</h3>
+		<output>This is the output of a calculation</output>
+		
+		<h3>Progress</h3>
+		<p>Progress bar: <progress>0 %</progress></p>
+
+
+		
+		<h3>Section</h3>
+		<section>
+			<h4>This is a section</h4>
+			<p>My section content</p>	
+		</section>
+		
+		<h3>Source</h3>
+		<p>See Video or Audio tag</p>
+		
+		<h3>Time</h3>
+		<p>Our first date was <time datetime="2006-09-23">a Saturday</time>.</p>
+		
+		<h3>Video</h3>
+		<video autobuffer controls>
+			<source src="video/320x240.ogg" />
+			<source src="video/320x240.m4v" />		
+		</video>
+		
+
+		<section id="content">
+			<h1>H1 Title</h1>
+			<p>Recordari volo transactas <a href="#">foeditates meas</a>, et carnales corruptiones animae meae, non quod eas amem, sed ut <acronym title="Computerized Axial Tomography">CAT</acronym> te, deus meus. amore amoris tui facio istuc, recolens vias meas nequissimas in amaritudine recogitationis meae, ut tu dulcescas mihi, dulcedo non fallax, dulcedo felix et secura, et colligens me a dispersione, in qua frustatim discissus sum, dum ab uno te aversus in multa evanui. Exarsi enim aliquando satiari inferis in adulescentia, et silvescere ausus sum variis et umbrosis amoribus, et contabuit species mea, et conputrui coram oculis tuis, placens mihi et placere cupiens oculis hominum.</p>
+			<h2>H2 Title</h2>
+			<p>Recordari volo transactas <a href="#">foeditates meas</a>, et carnales corruptiones animae meae, non quod eas amem, sed ut <acronym title="Computerized Axial Tomography">CAT</acronym> te, deus meus. amore amoris tui facio istuc, recolens vias meas nequissimas in amaritudine recogitationis meae, ut tu dulcescas mihi, dulcedo non fallax, dulcedo felix et secura, et colligens me a dispersione, in qua frustatim discissus sum, dum ab uno te aversus in multa evanui. Exarsi enim aliquando satiari inferis in adulescentia, et silvescere ausus sum variis et umbrosis amoribus, et contabuit species mea, et conputrui coram oculis tuis, placens mihi et placere cupiens oculis hominum.</p>
+			<h3>H3 Title</h3>
+			<p><dfn>Definition</dfn>: To define the meaning of a word, phrase or term.  erat, quod me <abbr title="This is the full text">My abbreviation</abbr> delectabat, nisi amare et amari? sed non tenebatur modus ab animo usque ad animum, quatenus est luminosus limes amicitiae, sed exhalabantur nebulae de limosa concupiscentia carnis et scatebra pubertatis, et obnubilabant atque obfuscabant cor meum, ut non discerneretur serenitas dilectionis a caligine libidinis. utrumque in confuso aestuabat et rapiebat inbecillam aetatem per abrupta cupiditatum</p>
+			<h4>H4 Title</h4>
+			<p><a href="#">Et anno quidem</a> illo intermissa erant studia mea, dum mihi reducto a Madauris, in qua vicina urbe iam coeperam litteraturae atque oratoriae percipiendae gratia peregrinari, <a href="#">longinquioris</a> apud Karthaginem peregrinationis sumptus parabantur, animositate magis quam opibus patris, municipis Thagastensis admodum tenuis. cui narro haec? neque enim tibi, deus meus, sed apud te narro haec generi meo, generi humano, quantulacumque ex particula incidere potest in istas meas litteras. et ut quid hoc? ut videlicet ego et quisquis haec legit cogitemus, de quam profundo clamandum sit ad te. et quid</p>
+			<h5>H5 Title</h5>
+			<p>Furtum certe punit lex tua, domine, <a href="http://www.bbc.co.uk">et lex scripta</a> in cordibus hominum, quam ne ipsa quidem delet iniquitas: quis enim fur aequo animo furem patitur? nec copiosus adactum inopia. et ego furtum facere volui, et feci, nulla conpulsus egestate, nisi penuria et fastidio iustitiae et sagina iniquitatis. nam id furatus sum, quod mihi abundabat et multa melius; nec ea re volebam frui, quam furto appetebam, sed ipso furto et peccato.</p>
+			<h6>H6 Title</h6>
+			<p>Etenim <del>deleted text</del> <ins>inserted text</ins> est pulchris corporibus, et auro et argento et omnibus, et in contactu carnis congruentia valet plurimum, ceterisque sensibus est sua cuique accommodata modificatio corporum; habet etiam honor temporalis et imperitandi atque superandi potentia suum decus, unde etiam vindictae aviditas oritur: et tamen in cuncta haec adipiscenda non est egrediendum abs te, domine, </p>
+			<p>Type <kbd>shapeshed.com</kbd> into your browser address bar. </p>
+			<pre>This text has
+			been formatted using
+			   the HTML pre tag. The brower should
+			      display all white space
+			as it was entered.
+			</pre>
+			<p>And then she said <q>like... whatever!</q></p>
+			<p>When you click the <kbd>Delete</kbd> button, you will be asked <samp>Are you sure you want to delete 9 to 5 job?</samp> Click <kbd>Yes</kbd> to continue. </p>
+			<p>The sub tag is used for <sub>subscript text</sub></p>
+			<p>The sup tag is used for <sup>superscript text</sup></p>
+			<p>The HTML tt tag renders <tt>teletype</tt> (or <tt>monospaced</tt>) text. </p>
+			<p>The program accepts the <var>width</var> parameter to determine the display width. </p>
+			<ul>
+				<li>List item 1</li>
+				<li>List item 2</li>
+				<li>List item 3</li>
+			</ul>
+			<ol>
+				<li>List item 1</li>
+				<li>List item 2</li>
+				<li>List item 3</li>
+			</ol>
+			<dl>
+				<dt>List item 1</dt>
+				<dd>List item 2</dd>
+			</dl>
+			<blockquote>
+				<p>Mea, dum mihi reducto a Madauris, in qua vicina urbe iam coeperam litteraturae</p>
+			</blockquote>
+			<address>
+				My address
+			</address>
+			<code>
+				Some code
+			</code>
+			<form action="#" method="post">
+				<fieldset>
+					<legend>My Fieldset Legend</legend>
+					
+					<label for="my-button">Button Input Label</label>
+					<input type="button" class="button" name="my-button" id="my-button" value="My Button" />
+					
+					<label for="my-checkbox">Checkbox Input Label</label>
+					<input type="checkbox" class="checkbox" name="my-checkbox" id="my-checkbox" value="" />
+					
+					<label for="my-file">My File Label</label>
+					<input type="file" class="file" name="my-file" id="my-file" value="" />
+					
+					<input type="hidden" name="my-hidden" id="my-hidden" value="My Hidden Value" />
+					
+					<label for="my-password">My Password Label</label>
+					<input type="password" class="password" name="my-password" id="my-password" value="" />
+					
+					<label for="my-radio">My Radio Label</label>
+					<input type="radio" class="radio" name="my-radio" id="my-radio" value="" />
+					
+					<label for="my-reset">My Reset Label</label>
+					<input type="reset" class="reset" name="my-reset" id="my-reset" value="Reset" />
+				
+					<label for="my-text">My Text Label</label>
+					<input type="text" class="text" name="my-text" id="my-text" value="" />
+
+					<label for="my-textarea">My Textarea Label</label>					
+					<textarea name="my-textarea" id="my-textarea" rows="5" cols="20"></textarea>
+
+					<input type="submit" class="submit" name="my-submit" id="my-submit" value="Submit" />	
+				
+				</fieldset>
+			</form>
+			<table summary="The number of employees and the foundation year of some imaginary companies.">
+				<caption>Table 1: Company data</caption>
+				<tr>
+					<th abbr="Company">Company Name</th>
+					<th abbr="Employees">Number of Employees</th>
+					<th abbr="Founded">Foundation Year</th>
+				</tr>
+				<tr>
+					<td>ACME Inc</td>
+					<td>1000</td>
+					<td>1947</td>
+				</tr>
+				<tr>
+					<td>XYZ Corp</td>
+					<td>2000</td>
+					<td>1973</td>
+				</tr>
+			</table>
+
+
+
+		</section>
+		<footer>
+			<p>Your footer content in here.</p>
+		</footer>		
+	</section>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/*-----------------------------------------------------------------------------
+[client] Screen Stylesheet
+
+version:   1.0
+date:      01/03/07
+author:    [your name]
+email:     [you at domain dot com]
+
+website:   [your domain]
+
+-----------------------------------------------------------------------------*/
+
+/* Reset
+Based on http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+Removed elements not supported in HTML5
+-----------------------------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* 
+Trigger the new block level elements in to the correct content flow
+-----------------------------------------------------------------------------*/
+article, aside, dialog, figure, 
+footer, header, hgroup, menu, 
+nav, section { 
+	display: block; 
+}
+
+/* Set up the document
+-----------------------------------------------------------------------------*/
+body
+	{
+	font: 75%/1.5  Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+	background: #ccc;
+	color: #000;	
+	text-align:center;
+}
+#wrapper
+	{ 
+	width: 960px; /* Set page width here - you can also use percentage */
+	text-align:left;  
+	margin-left:auto; 
+	margin-right:auto; 
+	margin-top: .75em;
+	margin-bottom: 1.5em;
+	padding: 10px;
+	background: #FFFFFF;
+}
+/* Typography
+-----------------------------------------------------------------------------*/
+/* 
+This sets up a vertical rhythm for the page typography 
+Image replacement technique for the logo 
+Change the dimensions on the H1 to the dimensions of your logo
+*/
+h1
+	{
+	font-size: 1em;
+	margin-bottom: 1.5em; /* margin-bottom = 18pt */
+}	
+h2 {
+	font-size: 1.6666666666666667em; /* 20 pt */
+	line-height: 0.9em; /* 20 * line-height = 18pt */
+	margin-bottom: 0.9em; /* 20 * margin-bottom = 18pt */
+}
+h3 {
+	clear: left;
+	font-size: 1.5em; /* 18 pt */
+	line-height: 1em; /* 18 * line-height = 18pt */
+	margin-bottom: 1em; /* 18 * margin-bottom = 18pt */
+}
+h4 {
+	font-size: 1.3333333333333333em; /* 16 pt */
+	line-height: 1.125em; /* 18 * line-height = 18pt */
+	margin-bottom: 1.125em; /* 18 * margin-bottom = 18pt */
+}
+h5 {
+	font-size: 1.1666666666666667em; /* 14 pt */
+	line-height: 1.2857142857142858em; /* 18 * line-height = 18pt */
+	margin-bottom: 1.2857142857142858em; /* 18 * margin-bottom = 18pt */
+}
+h6 {
+	font-size:1em; /* 12 pt */
+	line-height: 1.5em; /* 18 * line-height = 18pt */
+	margin-bottom: 1.5em; /* 18 * margin-bottom = 18pt */
+}	
+p, q, cite, address
+	{
+	font-size:1em; /* 12 pt */
+	line-height: 1.5em; /* 18 * line-height = 18pt */
+	margin-bottom: 1.5em; /* 18 * margin-bottom = 18pt */
+}
+ul, ol, dl
+	{
+	font-size: 1em; /* Equivalent to 12pt */
+	margin-bottom: 1.5em; /* margin-bottom = 18pt */
+}
+li, dd, dt
+	{
+	font-size: 1em; /* Equivalent to 12pt */	
+}
+a
+	{
+	text-decoration: underline;
+	color: #3333cc;
+	outline:none;
+}
+a:hover
+	{
+	text-decoration: none;
+}
+code, samp, dfn, kbd, var, acronym, ins, del
+	{
+
+}
+abbr {
+	speak: spell-out;
+}
+
+acronym {
+	speak: normal;
+}
+/* Header / Navigation
+-----------------------------------------------------------------------------*/
+#skip-links {
+	height: 0;
+	width: 0;
+	display: none;
+}
+
+nav
+	{
+	clear: both;
+}
+nav ul
+	{
+	list-style: none;	
+}
+nav ul li
+	{
+	display: inline;
+	margin-right: 0.75em;
+
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer{
+	clear:both;
+}
+
+/* Forms
+-----------------------------------------------------------------------------*/
+#content form
+	{
+	margin-bottom: 1.5em;	
+}
+
+#content fieldset
+	{
+	border: 1px solid #ccc;	
+	padding: 0.25em; /* 3px */
+}
+
+#content label
+	{
+	width: 200px;
+	clear: left;
+	float: left;
+	margin-bottom: 1.5em;	
+}
+
+#content input.button, #content input.checkbox, #content input.file, #content input.password, #content input.radio, #content input.reset,#content input.text,#content input.submit, #content textarea
+	{
+	float: left;	
+}
+#content input.file, #content input.password, #content input.text
+	{
+	width: 200px;
+	border: 1px solid #ccc;	
+	padding: 0.25em;
+}
+
+#content input.submit
+	{
+	clear: left;	
+}
+
+#content textarea
+	{
+	width: 200px;
+	border: 1px solid #ccc;	
+}
+
+
+
+/* Tables 
+-----------------------------------------------------------------------------*/
+table
+	{ 
+	width: 100%;
+  	border-spacing: 0;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+caption
+	{
+	text-align: left;	
+	font-size:1em; /* 12 pt */
+	line-height: 1.5em; /* 18 * line-height = 18pt */
+}
+
+th 
+	{
+  	text-align: left;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	padding: .25em; /* 3px */
+	background: #ccc;
+}
+
+
+
+td 
+	{
+  	text-align: left;
+	font-weight: normal;
+	border: 1px solid #ccc;
+	padding: .25em; /* 3px */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
